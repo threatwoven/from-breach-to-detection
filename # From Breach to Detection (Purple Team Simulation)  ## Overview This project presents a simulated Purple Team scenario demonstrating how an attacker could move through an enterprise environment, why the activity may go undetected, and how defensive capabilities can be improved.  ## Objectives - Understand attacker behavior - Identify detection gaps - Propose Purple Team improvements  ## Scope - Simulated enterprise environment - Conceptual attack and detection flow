@@ -1,0 +1,25 @@
+# From Breach to Detection – Purple Team Simulation
+
+## Attack Scenario
+An attacker gains initial access through compromised user credentials
+obtained via phishing.
+The attacker then moves laterally to access additional systems
+and attempts privilege escalation.
+
+## Detection Gaps
+- Limited monitoring of authentication anomalies
+- Insufficient alerting for lateral movement
+- Delayed detection of privilege escalation attempts
+
+## Blue Team Perspective
+The security team lacks visibility into early-stage attacker behavior,
+resulting in delayed response and increased attacker dwell time.
+
+## Purple Team Improvements
+- Implement improved authentication logging and anomaly detection
+- Enhance visibility into lateral movement techniques
+- Conduct Purple Team exercises to align detection with real attack paths
+
+## Outcome
+Improving collaboration between offensive and defensive teams
+reduces detection time and strengthens organizational security posture.
