@@ -5,54 +5,70 @@
 > The focus is on attacker behavior, detection gaps, and defensive insights,
 > rather than tools or exploitation techniques.
 
-## Phase 1: Initial Access
-The attacker gains access through compromised user credentials obtained via a phishing campaign.
+The attacker gains access through compromised user credentials obtained via a phishing campaign, resulting in legitimate-looking authentication activity.
 
----
 
-## Phase 2: Internal Reconnaissance
-After gaining access, the attacker observes internal network behavior to understand:
-- Common communication patterns
-- Systems with low visibility
-- Implicit trust relationships inside the network
+Phase 2: Internal Reconnaissance
 
----
+After gaining access, the attacker passively observes internal network behavior to identify:
 
-## Phase 3: Lateral Movement
+Common communication patterns
+
+Systems with low visibility and minimal monitoring
+
+Implicit trust relationships within the internal network
+
+This phase focuses on understanding which assets can be accessed without triggering alerts.
+
+
+Phase 3: Lateral Movement
+
 The attacker attempts to move laterally by:
-- Reusing credentials across internal systems
-- Accessing systems that are rarely used
-- Leveraging legitimate administrative tools to avoid detection
 
----
+Reusing valid credentials across internal systems
 
-## Phase 4: Privilege Escalation Attempt
-The attacker attempts to increase privileges within the environment, including interactions with Active Directory resources.
+Accessing rarely used or low-traffic systems
 
----
+Leveraging legitimate administrative tools to blend in with normal activity
 
-## Phase 5: Detection Gaps
-Several gaps contributed to delayed detection:
-- Lack of visibility into abnormal authentication patterns
-- Insufficient alerting on lateral movement activity
-- Delayed detection of privilege escalation attempts
+These actions exploit the assumption that internal traffic is inherently trusted.
 
----
 
-## Phase 6: Blue Team Perspective
-Security monitoring was primarily focused on perimeter defenses, resulting in limited visibility into internal attacker behavior.
+Phase 4: Privilege Escalation Attempt
 
----
+The attacker attempts to increase privileges within the environment, including interactions with Active Directory resources, aiming to expand access to higher-value assets.
 
-## Phase 7: Purple Team Recommendations
-- Improve authentication telemetry and anomaly detection
-- Enhance logging and monitoring of lateral movement techniques
-- Conduct regular Purple Team simulations to align attack paths with detection rules
 
----
+Phase 5: Detection Gaps
 
-## Outcome
-Aligning offensive techniques with defensive detection reduces attacker dwell time and strengthens the overall security posture.
+Several detection gaps contributed to delayed response:
+
+Lack of visibility into abnormal authentication patterns
+
+Insufficient alerting for lateral movement behavior
+
+Delayed detection of privilege escalation attempts
+
+
+Phase 6: Blue Team Perspective
+
+Security monitoring was primarily focused on perimeter-based threats, resulting in limited visibility into post-compromise internal attacker behavior.
+
+
+Phase 7: Purple Team Recommendations
+
+To reduce attacker dwell time and improve detection maturity:
+
+Improve authentication telemetry and behavioral anomaly detection
+
+Enhance logging and monitoring of lateral movement techniques
+
+Conduct regular Purple Team simulations to align attack paths with detection rules
+
+
+Outcome
+
+Aligning offensive techniques with defensive detection capabilities reduces attacker dwell time and strengthens the overall security posture.
 
 A detailed step-by-step attack walkthrough is available in `SCENARIO-WALKTHROUGH.md`.
 
