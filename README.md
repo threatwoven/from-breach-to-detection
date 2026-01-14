@@ -52,5 +52,5 @@ Behavioral mismatch compared to historical user activity
 Purple Team Insight
 
 This simulation highlights how attackers exploit trust boundaries, and how defenders can shift from perimeter-based security to behavior and context-aware detection
-![Attack Flow](diagrams/attack-flow.png.png)
+![Attack Flow](attack-flow.png.png)
 
