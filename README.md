@@ -1,4 +1,3 @@
-
 Overview
 
 This project simulates a realistic internal network compromise scenario where an attacker leverages a compromised employee account to move laterally within a trusted internal environment.
@@ -51,6 +50,6 @@ Behavioral mismatch compared to historical user activity
 
 Purple Team Insight
 
-This simulation highlights how attackers exploit trust boundaries, and how defenders can shift from perimeter-based security to behavior and context-aware detection
+This simulation highlights how attackers exploit trust boundaries, and how defenders can shift from perimeter-based security to behavior and context-aware detection.
 ![Attack Flow](attack-flow.png.png)
 
